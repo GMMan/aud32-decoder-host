@@ -38,7 +38,7 @@ void main(void)
     {
         while (rpc_ctx.cmd == CMD_IDLE)
             bp();
-        
+
         switch (rpc_ctx.cmd)
         {
         case CMD_INIT:
@@ -98,7 +98,7 @@ void aud32dec_post_init(aud32dec_t *decoder_control)
         decoder_control->number_of_regions = 14;
     else
         decoder_control->number_of_regions = 16;
-                
+
     decoder_control->number_of_bits_per_frame = decoder_control->bit_rate * 320 / 16000;
     decoder_control->inbytes = decoder_control->number_of_bits_per_frame / 8;
 }
