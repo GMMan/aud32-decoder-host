@@ -1,0 +1,6 @@
+*.bin
+*.map
+obj/*
+audio32codec_decoder.h
+
+!obj/.gitkeep
